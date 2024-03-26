@@ -1,15 +1,478 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <h1>Saksham Chakradhar!</h1>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+        <!--=============== REMIXICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+        
+        <!--=============== SWIPER CSS ===============-->
+        <link rel="stylesheet" href="assets/js/swiper-bundle.min.css">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <title>Portfolio Website</title>
+        <link rel="icon" href="icon.png">
+    </head>
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+              <nav class="nav container">
+                <a href="#" class="nav_log">
+                    Saksham
+                </a>
+
+               <div class="nav_menu" id="nav-menu">
+                <ul class="nav_list grid">
+                    <li class="nav_item">
+                        <a href="#home" class="nav_link">
+                            <i class="ri-home-5-line"></i> Home
+                        </a>
+                    </li>
+
+                    <li class="nav_item">
+                        <a href="#skill" class="nav_link"> 
+                            <i class="ri-trophy-line"></i> Skills
+                        </a>
+                    </li>
+
+                    <li class="nav_item">
+                        <a href="#Qualification" class="nav_link">
+                            <i class="ri-book-open-line"></i> Qualification
+                        </a>
+                    </li>
+
+                    <li class="nav_item">
+                        <a href="#service" class="nav_link">
+                            <i class="ri-briefcase-line"></i> Services
+                        </a>
+                    </li>
+
+                    <li class="nav_item">
+                        <a href="#projects" class="nav_link">
+                            <i class="ri-image-line"></i> Projects
+                        </a>
+                    </li>
+
+                    <li class="nav_item">
+                        <a href="#contacts" class="nav_link">
+                            <i class="ri-chat-3-line"></i> Contacts
+                        </a>
+                    </li>
+                </ul>
+
+                <!-- close button -->
+
+                <div class="nav_close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+                 </div>
+
+               <div class="nav_button">
+                       <!-- theme change button -->
+                       <!-- <i class="ri-moon-line change-theme" id="theme-button"></i> -->
+
+                       <!-- toggle button -->
+                       <div class="nav_toggle" id="nav-toggle">
+                        <i class="ri-menu-4-line"></i>
+                       </div>
+               </div>
+              </nav>
+        </header>
+
+        <!--==================== MAIN ====================-->
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home section" id="home">
+                <div class="home_container container grid section_border">
+                    <div class="home_data grid">
+                        <h1 class="home_title">
+                            Hi, I'm Saksham <br>
+                            Web Developer <br>
+                            Based in Bhopal <br>
+                        </h1>
+
+                        <div class="home_blog grid">
+                            <div class="home_perfil">
+                                <img src="assets/img/photo.webp" alt="home perfil">
+                            </div>
+
+                            <img src="assets/img/shape-wawes.svg" alt="" class="home_shape-wawes">
+                            <img src="assets/img/shape-circle.svg" alt="" class="home_shape-circle">
+
+                        </div>
+
+                        <ul class="home_social">
+                            <a href="www.linkedin.com/in/saksham-chakradhar-802861231" target="_blank" class="home_social_link">
+                                <i class="ri-linkedin-fill"></i>
+                            </a>
+
+                            <a href="https://github.com/Sakshamchakradhar" target="_blank" class="home_social_link">
+                                <i class="ri-github-fill"></i>
+                            </a>
+
+                            <a href="https://dribbble.com/sakshamchakradhar" target="_blank" class="home_social_link">
+                                <i class="ri-dribbble-line"></i>
+                            </a>
+                        </ul>
+                    </div>
+
+        <!--==================== HOME INFO 1 ====================-->
+                     <div class="home_info">
+                        <div>
+                            <h3 class="home_info-tittle">
+                               BIOGRAPHY
+                            </h3>
+
+                            <p class="home_info-description">
+                                Hi I'm Saksham, Proficient in creating intuitive web pages and applications, with a keen interest in new projects. Well-versed in user interface and design.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h3 class="home_info-tittle">
+                                CONTACT
+                            </h3>
+
+                            <p class="home_info-description">
+                                Bhopal, MP <br>
+                                sakshamchakradhar151@gmail.com <br>
+                                +91 8827245153 <br>
+                            </p>
+                        </div>
+
+                        <div>
+                            <h3 class="home_info-tittle">
+                                 SERVICES
+                            </h3>
+
+                            <p class="home_info-description">
+                                Website Design <br>
+                                UI/UX Design <br>
+                            </p>
+                        </div>
+
+                     </div>
+
+        <!--==================== HOME INFO 2 ====================--> 
+        
+               <div class="hoome_info">
+                <div>
+                    <h3 class="home_info-tittle">
+                        YEARS OF EXPERIENCE
+                    </h3>
+
+                    <p class="home_info-number">
+                       Fresher
+                    </p>
+                 </div>
+
+                 <div>
+                    <h3 class="home_info-tittle">
+                        COMPLETED PROJECTS
+                    </h3>
+
+                    <p class="home_info-number">
+                        15+
+                    </p>
+                 </div>
+
+                 <div>
+                    <h3 class="home_info-tittle">
+                         COMPANIES WORKED
+                    </h3>
+
+                    <p class="home_info-number">
+                        2
+                    </p>
+                 </div>
+
+               </div>
 
 
-    <script src="app.js"></script>
-</body>
+                </div>
+            </section>
+
+            <!--==================== SKILLS ====================-->
+            <section class="skills section" id="skills">
+                <h2 class="section_title">Skills</h2>
+                <span class="section_subtitle">My favorite skills</span>
+
+                <div class="skills_container container grid section_border">
+             <!--==================== SKILLS 1 ====================-->
+                <div class="skills_content">
+                    <h3 class="skills_title">
+                        <i class="ri-braces-line"></i> Frontend Developer
+                    </h3>
+
+                    <div class="skills_info">
+                       <div class="skills_data">
+                            <div class="skills_blob">
+                                <img src="assets/img/C++ - icon.svg" alt="skills image">
+                            </div>
+
+                            <h3 class="skills_name">C++</h3>
+                            <span class="skills_subtittle">Intermediate</span>
+                        </div>
+
+
+                        <div class="skills_data">
+                            <div class="skills_blob">
+                                <img src="assets/img/html-1.svg" alt="skills image">
+                            </div>
+
+                            <h3 class="skills_name">HTML</h3>
+                            <span class="skills_subtittle">Advanced</span>
+                        </div>
+
+                        <div class="skills_data">
+                            <div class="skills_blob">
+                                <img src="assets/img/css-3.svg" alt="skills image">
+                            </div>
+
+                            <h3 class="skills_name">CSS</h3>
+                            <span class="skills_subtittle">Advanced</span>
+                        </div>
+
+                        <div class="skills_data">
+                            <div class="skills_blob">
+                                <img src="assets/img/logo-javascript.svg" alt="skills image">
+                            </div>
+
+                            <h3 class="skills_name">JAVASCRIPT</h3>
+                            <span class="skills_subtittle">Intermediate</span>
+                        </div>
+
+                        <div class="skills_data">
+                            <div class="skills_blob">
+                                <img src="assets/img/react-2.svg" alt="skills image">
+                            </div>
+
+                            <h3 class="skills_name">REACT</h3>
+                            <span class="skills_subtittle">Basic</span>
+                        </div>
+
+                        <div class="skills_data">
+                            <div class="skills_blob">
+                                <img src="assets/img/git-icon.svg" alt="skills image">
+                            </div>
+
+                            <h3 class="skills_name">GIT</h3>
+                            <span class="skills_subtittle">Intermediate</span>
+                        </div>
+
+                        <div class="skills_data">
+                            <div class="skills_blob">
+                                <img src="assets/img/flutter-icon.svg" alt="skills image">
+                            </div>
+
+                            <h3 class="skills_name">FLUTTER</h3>
+                            <span class="skills_subtittle">Basic</span>
+                        </div>
+
+                        <div class="skills_data">
+                            <div class="skills_blob">
+                                <img src="assets/img/mysql-icon.svg" alt="skills image">
+                            </div>
+
+                            <h3 class="skills_name">SQL</h3>
+                            <span class="skills_subtittle">Basic</span>
+                        </div>
+                    </div>
+                </div>
+
+             <!--==================== SKILLS 2 ====================-->
+                
+             <div class="skills_content">
+                <h3 class="skills_title">
+                    <i class="ri-pantone-line"></i> Web Designer
+                </h3>
+
+                <div class="skills_info">
+                    <div class="skills_data">
+                        <div class="skills_blob">
+                            <img src="assets/img/figma-1.svg" alt="skills image">
+                        </div>
+
+                        <h3 class="skills_name">FIGMA</h3>
+                        <span class="skills_subtittle">Intermediate</span>
+                    </div>
+
+                    <div class="skills_data">
+                        <div class="skills_blob">
+                            <img src="assets/img/adobe-xd-1.svg" alt="skills image">
+                        </div>
+
+                        <h3 class="skills_name">Adobe XD</h3>
+                        <span class="skills_subtittle">Basic</span>
+                    </div>
+
+                    <div class="skills_data">
+                        <div class="skills_blob">
+                            <img src="assets/img/canva-icon.svg" alt="skills image">
+                        </div>
+
+                        <h3 class="skills_name">CANVA</h3>
+                        <span class="skills_subtittle">Advanced</span>
+                    </div>
+
+                    <div class="skills_data">
+                        <div class="skills_blob">
+                            <img src="adobe-photoshop-2.svg" alt="skills image">
+                        </div>
+
+                        <h3 class="skills_name">PHOTOSHOP</h3>
+                        <span class="skills_subtittle">Intermediate</span>
+                    </div>
+                 </div>
+            </div>
+               </div>
+            </section>
+
+            <!--==================== QUALIFICATION ====================-->
+            <section class="qualification section" id="qualification">
+                <h2 class="section_title">Qualification</h2>
+                <span class="section_subtitle">Experience & education</span>
+
+                <div class="qualification_container container grid section_border">
+            <!--==================== QUALIFICATION 1 ====================-->
+                        <div class="qualification_content">
+                            <h3 class="qualification_title">
+                                <i class="ri-pencil-ruler-2-line"></i> Education
+                            </h3>
+
+                            <div class="qualification_info">
+                                <div>
+                                    <h3 class="qualification_name">
+                                    B.Tech - Information Technology
+                                    </h3>
+
+                                    <span class="qualification_country">Oriental college of technology, Bhopal</span>
+                                    <span class="qualification_year">(2020-2024)</span>
+                                </div>
+
+                                <div>
+                                    <h3 class="qualification_name">
+                                           Higher Secondary School
+                                    </h3>
+
+                                    <span class="qualification_country"> Utkrist Higher Secondary School, Udaipura</span>
+                                    <span class="qualification_year">(2019-2020)</span>
+                                </div>
+
+                            </div>
+                        </div>
+
+                         <!--==================== QUALIFICATION 2 ====================-->
+                         <div class="qualification_content">
+                            <h3 class="qualification_title">
+                                <i class="ri-building-line"></i> Work
+                            </h3>
+
+                            <div class="qualification_info">
+                                <div>
+                                    <h3 class="qualification_name">
+                                        UI/UX Intern
+                                    </h3>
+
+                                    <span class="qualification_country">Edfling IT Service, Bhopal</span>
+                                    <span class="qualification_year">(July 2023 - September 2023)</span>
+                                </div>
+
+                                <div>
+                                    <h3 class="qualification_name">
+                                        Frontend Intern 
+                                    </h3>
+
+                                    <span class="qualification_country">LiftKaro, Bhopal</span>
+                                    <span class="qualification_year">(April 2022 - June 2022)</span>
+                                </div>
+                                
+                            </div>
+                        </div>
+                </div>
+                <img src="assets/img/shape-circle.svg" alt="qualification image" class="qualification_img">
+            </section>
+
+            <!--==================== SERVICES ====================-->
+            <section class="services section" id="services">
+                <h2 class="section_title">Services</h2>
+                <span class="section_subtitle">What i offer</span>
+
+                <div class="services_container container grid section_border">
+                    <div class="services_card">
+                        <i class="ri-layout-4-line"></i>
+
+                        <h2 class="services_title">
+                            UI/UX <br>
+                            Designer
+                        </h2>
+
+                        <p class="services_description">
+                            Service that provides the best quality and at the request of the client, with professional work and customer support.
+                        </p>
+
+                        <div class="services_border"></div>
+                    </div>
+
+                    <div class="services_card">
+                        <i class="ri-code-line"></i>
+
+                        <h2 class="services_title">
+                            Website <br>
+                            Design
+                        </h2>
+
+                        <p class="services_description">
+                            Crafting digital experiences, one pixel at a time.
+                        </p>
+
+                        <div class="services_border"></div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!--==================== PROJECTS ====================-->
+            <section class="projects section" id="projects">
+                
+            </section>
+
+            <!--==================== TESTIMONIAL ====================-->
+            <section class="testimonial section">
+                
+            </section>
+
+            <!--==================== CONTACT ====================-->
+            <section class="contact section" id="contact">
+                
+            </section>
+        </main>
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer">
+            
+        </footer>
+
+
+        <!--========== SCROLL UP ==========-->
+        
+
+        <!--=============== SCROLLREVEAL ===============-->
+        <script src="assets/js/scrollreveal.min.js"></script>
+
+        <!--=============== SWIPER JS ===============-->
+        <script src="assets/js/swiper-bundle-min.js"></script>
+        
+        <!--=============== EMAIL JS ===============-->
+        
+
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+    </body>
 </html>
