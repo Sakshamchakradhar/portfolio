@@ -13,11 +13,14 @@
         <!--=============== SWIPER CSS ===============-->
         <link rel="stylesheet" href="assets/js/swiper-bundle.min.css">
 
+        <!-- swiper css cdn link from swiperjs.com -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
         <!--=============== CSS ===============-->
         <link rel="stylesheet" href="assets/css/styles.css">
 
         <title>Portfolio Website</title>
-        <link rel="icon" href="icon.png">
+        <link rel="icon" href="./assets/img/icon.svg">
     </head>
     <body>
         <!--==================== HEADER ====================-->
@@ -440,13 +443,77 @@
 
             <!--==================== PROJECTS ====================-->
             <section class="projects section" id="projects">
-                
-            </section>
+                <h2 class="section_title">Projects</h2>
+                <span class="section_subtitle">My Latest Work</span>
+              
+                <div class="container section_border">
+                  <div class="projects_container swiper">
+                    <div class="swiper-wrapper">
+                      <!--==================== PROJECT 1 ====================-->
+                      <div class="projects_content swiper-slide">
+                        <img src="/assets/img/project1.jpeg" alt="projects image" class="projects_img">
+                        <div>
+                          <span class="projects_subtitle">Web</span>
+                          <h1 class="projects_title">Vakalat on Web</h1>
+                          <a href="https://github.com/Sakshamchakradhar/vakalat.github.io" class="projects_button">
+                            View Demo <i class="ri-arrow-right-line"></i>
+                          </a>
+                        </div>
+                      </div>
+              
+                      <!--==================== PROJECT 2 ====================-->
+                      <div class="projects_content swiper-slide">
+                        <img src="/assets/img/project2.jpg" alt="projects image" class="projects_img">
+                        <div>
+                          <span class="projects_subtitle">Web</span>
+                          <h1 class="projects_title">Frontend Projects</h1>
+                          <a href="https://github.com/Sakshamchakradhar" class="projects_button">
+                            View Demo <i class="ri-arrow-right-line"></i>
+                          </a>
+                        </div>
+                      </div>
+              
+                      <!--==================== PROJECT 3 ====================-->
+                      <div class="projects_content swiper-slide">
+                        <img src="/assets/img/project3.jpg" alt="projects image" class="projects_img">
+                        <div>
+                          <span class="projects_subtitle">Designing</span>
+                          <h1 class="projects_title">Social media interface.</h1>
+                          <a href="https://dribbble.com/sakshamchakradhar" class="projects_button">
+                            View Demo <i class="ri-arrow-right-line"></i>
+                          </a>
+                        </div>
+                      </div>
+              
+                      <!--==================== PROJECT 4 ====================-->
+                      <div class="projects_content swiper-slide">
+                        <img src="/assets/img/project4.svg" alt="projects image" class="projects_img">
+                        <div>
+                          <span class="projects_subtitle">Artificial Intelligence</span>
+                          <h1 class="projects_title"> Mask detect</h1>
+                          <a href="https://github.com/Sakshamchakradhar/Face-mask-dectection" class="projects_button">
+                            View Demo <i class="ri-arrow-right-line"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+              
+                    <!-- swiper arrows -->
+                    
+                        <div class="swiper-button-next">
+                            <i class="ri-arrow-right-s-line"></i>
+                            </div>
+        
+                            <div class="swiper-button-prev">
+                            <i class="ri-arrow-left-s-line"></i>
+                            </div>  
+              
+                    <!-- swiper pagination -->
+                    <div class="swiper-pagination"></div>
 
-            <!--==================== TESTIMONIAL ====================-->
-            <section class="testimonial section">
-                
-            </section>
+                  </div>
+                </div>
+              </section>
 
             <!--==================== CONTACT ====================-->
             <section class="contact section" id="contact">
@@ -468,6 +535,10 @@
 
         <!--=============== SWIPER JS ===============-->
         <script src="assets/js/swiper-bundle-min.js"></script>
+
+        
+        <!-- swiper js cdn link from swiperjs.com -->
+         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
         
         <!--=============== EMAIL JS ===============-->
         
