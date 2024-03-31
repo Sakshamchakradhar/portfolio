@@ -19,7 +19,7 @@
         <!--=============== CSS ===============-->
         <link rel="stylesheet" href="assets/css/styles.css">
 
-        <title>Portfolio Website</title>
+        <title>Portfolio </title>
         <link rel="icon" href="./assets/img/icon.svg">
     </head>
     <body>
@@ -33,25 +33,25 @@
                <div class="nav_menu" id="nav-menu">
                 <ul class="nav_list grid">
                     <li class="nav_item">
-                        <a href="#home" class="nav_link">
+                        <a href="#home" class="nav_link active-link">
                             <i class="ri-home-5-line"></i> Home
                         </a>
                     </li>
 
                     <li class="nav_item">
-                        <a href="#skill" class="nav_link"> 
+                        <a href="#skills" class="nav_link"> 
                             <i class="ri-trophy-line"></i> Skills
                         </a>
                     </li>
 
                     <li class="nav_item">
-                        <a href="#Qualification" class="nav_link">
+                        <a href="#qualification" class="nav_link">
                             <i class="ri-book-open-line"></i> Qualification
                         </a>
                     </li>
 
                     <li class="nav_item">
-                        <a href="#service" class="nav_link">
+                        <a href="#services" class="nav_link">
                             <i class="ri-briefcase-line"></i> Services
                         </a>
                     </li>
@@ -63,7 +63,7 @@
                     </li>
 
                     <li class="nav_item">
-                        <a href="#contacts" class="nav_link">
+                        <a href="#contact" class="nav_link">
                             <i class="ri-chat-3-line"></i> Contacts
                         </a>
                     </li>
@@ -507,7 +507,7 @@
                       </div>
                     </div>
               
-                    <!-- swiper arrows -->
+                                        <!-- swiper arrows -->
                     
                         <div class="swiper-button-next">
                             <i class="ri-arrow-right-s-line"></i>
@@ -517,7 +517,7 @@
                             <i class="ri-arrow-left-s-line"></i>
                             </div>  
               
-                    <!-- swiper pagination -->
+                                             <!-- swiper pagination -->
                     <div class="swiper-pagination"></div>
 
                   </div>
@@ -572,6 +572,8 @@
                                 <textarea name="user_project" placeholder="Write your project" id="contact-project" class="contact_form-input"></textarea>
                             </div>
 
+                            <p class="contact_message" id="contact-message"></p>
+
                             <button id="btn">
                                 <p id="btnText">Submit</p>
                                 <div class="check-box">
@@ -590,11 +592,43 @@
 
         <!--==================== FOOTER ====================-->
         <footer class="footer">
-            
-        </footer>
+            <div class="footer_container container">
+                <h1 class="footer_title">Saksham</h1>
+                <p>Frontend Developer</p>
 
+                <ul class="footer_list">
+                    <li>
+                        <a href="#home" class="footer_link">HOME</a>
+                    </li>
+
+                    <li>
+                        <a href="#skills" class="footer_link">SKILLS</a>
+                    </li>
+
+                    <li>
+                        <a href="#projects" class="footer_link">PROJECTS</a>
+                    </li>
+                </ul>
+
+                <ul class="footer_social">
+                    <a href="https://www.linkedin.com/in/saksham-chakradhar-802861231/" target="_blank" class="footer_social-link"><i class="ri-linkedin-box-line"></i></a>
+
+
+                    <a href="https://github.com/Sakshamchakradhar" target="_blank" class="footer_social-link"><i class="ri-github-line"></i></a>
+
+
+                    <a href="https://dribbble.com/sakshamchakradhar" target="_blank" class="footer_social-link"><i class="ri-dribbble-fill"></i></a>
+                </ul>
+
+                <span class="footer_copy"> &#169; Copyright Saksham. All rights reserved!</span>
+            </div>
+          </footer>
 
         <!--========== SCROLL UP ==========-->
+
+        <a href="#" class="scroll_up" id="scroll-up">
+            <i class="ri-arrow-up-line"></i>
+        </a>
         
 
         <!--=============== SCROLLREVEAL ===============-->
@@ -608,7 +642,8 @@
          <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
         
         <!--=============== EMAIL JS ===============-->
-        
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"> </script>
+
 
         <!--=============== MAIN JS ===============-->
         <script src="assets/js/main.js"></script>
