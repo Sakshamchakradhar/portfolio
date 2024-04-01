@@ -97,6 +97,18 @@ img {
 
 /*=============== THEME ===============*/
 
+.nav_button{
+  display: flex;
+  align-items: center;
+  column-gap: 1.5rem;
+}
+
+.change-theme{
+  font-size: 1.25rem;
+  color: var(--title-color);
+  cursor: pointer;
+  transition: color .3s;
+}
 
 /*========== Variables Dark theme ==========*/
 body.dark-theme {
@@ -111,6 +123,39 @@ body.dark-theme {
     the website, in light theme
 ==========*/
 
+.dark-theme  .nav,
+.dark-theme  .nav_menu,
+.dark-theme  .scrollup{
+  background-color: var(--container-color);
+  box-shadow: 0 4px 20px hsla(207, 24%, 8%, .4);
+}
+
+.dark-theme .home_shape-wawes,
+.dark-theme .home_shape-circle,
+.dark-theme .qualification_img
+{
+  filter: invert(1);
+}
+
+.dark-theme .home_social_link{
+  color: var(--title-color);
+}
+
+.dark-theme .section_border{
+  border-bottom: 1px solid hsl(207, 4%, 32%);
+}
+
+.dark-theme::-webkit-scrollbar{
+  background-color: hsl(207, 4%, 15%);
+}
+
+.dark-theme::-webkit-scrollbar-thumb{
+  background-color: hsl(207, 4%, 25%);
+}
+
+.dark-theme::-webkit-scrollbar:hover{
+  background-color: hsl(207, 4%, 35%);
+}
 
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
@@ -173,6 +218,7 @@ body.dark-theme {
   box-shadow: 0 4px 20px hsla(207, 24%, 35%, .1);
   padding-inline: 1.5rem;
   border-radius: 3rem;
+  transition: background .4s; /* for dark mode animation */
 }
 
 .nav_logo,
@@ -279,6 +325,7 @@ body.dark-theme {
   justify-self: center;
   border-radius: 6.25rem;
   place-items: center;
+  transition: background .4s; /* for dark mode animation */
 }
 
 .home_perfil{
@@ -404,6 +451,7 @@ margin-bottom: 1rem;
   border-radius: 3rem;
   place-items: center;
   margin-bottom: 1rem;
+  transition: background .4s; /* for dark mode animation */
 }
 
 .skills_blob img{
@@ -519,6 +567,7 @@ font-weight: initial;
   text-align: center;
   padding: 3.5rem 1rem;
   border-radius: 7.25rem;
+  transition: background .4s; /* for dark mode animation */
 }
 
 .services_card i{
@@ -758,6 +807,7 @@ content: '';
   font-size: var(--smaller-font-size);
   font-weight: var(--font-medium);
   padding: .35rem;
+  transition: background .4s; /* for dark mode animation */
 }
 
 .contact_form-area{
@@ -971,3 +1021,27 @@ svg path{
 .show-scroll{
   bottom: 7.5rem;
 }
+
+
+/* =============== Resume download =============== */
+
+
+#downloadButton {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+#downloadButton:hover {
+  background-color: #0056b3;
+}
+
+
+/* =============== Dark light button =============== */
+
+
+
