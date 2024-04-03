@@ -78,7 +78,7 @@
 
                <div class="nav_button">
                        <!-- theme change button -->
-                       <i class="ri-moon-line change-theme" id="theme-button"></i>
+                       <i onclick="myFunction()" class="ri-moon-line change-theme" id="theme-button"></i> 
 
                        <!-- toggle button -->
                        <div class="nav_toggle" id="nav-toggle">
@@ -96,7 +96,7 @@
                     <div class="home_data grid">
                         <h1 class="home_title">
                             Hi, I'm Saksham <br>
-                            Web Developer <br>
+                            <span class="web_developer">Web Developer <br></span>
                             Based in Bhopal <br>
                         </h1>
 
@@ -608,6 +608,11 @@
                     <li>
                         <a href="#projects" class="footer_link">PROJECTS</a>
                     </li>
+
+                    <!-- ========== Resume download ========== -->
+                    <li>
+                        <a href="" class="footer_link" id="downloadButton">DOWNLOAD RESUME</a>
+                    </li>
                 </ul>
 
                 <ul class="footer_social">
@@ -649,7 +654,3 @@
         <script src="assets/js/main.js"></script>
     </body>
 </html>
-
-
-<!--========== Resume download ==========-->
-<!-- <button id="downloadButton">Download Resume</button> -->

@@ -108,20 +108,18 @@ img {
   color: var(--title-color);
   cursor: pointer;
   transition: color .3s;
-}
+} 
 
 /*========== Variables Dark theme ==========*/
-body.dark-theme {
+
+body.dark-theme{
   --title-color: hsl(207, 4%, 95%);
   --text-color: hsl(207, 4%, 65%);
   --body-color: hsl(207, 4%, 10%);
   --container-color: hsl(207, 4%, 12%);
 }
 
-/*========== 
-    Color changes in some parts of 
-    the website, in light theme
-==========*/
+/*==========   Color changes in some parts of the website, in light theme  ==========*/
 
 .dark-theme  .nav,
 .dark-theme  .nav_menu,
@@ -143,6 +141,33 @@ body.dark-theme {
 
 .dark-theme .section_border{
   border-bottom: 1px solid hsl(207, 4%, 32%);
+}
+
+.dark-theme .footer_link {
+  position: relative;
+  color: hsl(207, 4%, 95%);
+  text-decoration: none;
+}
+
+.dark-theme .footer_link:hover {
+  color: hsl(207, 4%, 95%);
+}
+
+.dark-theme .footer_link::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: hsl(207, 4%, 95%);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.dark-theme .footer_link:hover::before {
+  transform: scaleX(1);
 }
 
 .dark-theme::-webkit-scrollbar{
@@ -314,6 +339,10 @@ body.dark-theme {
   font-size: var(--biggest-font-size);
   letter-spacing: .3px;
   margin-bottom: .5rem;
+}
+
+.web_developer{
+  color: #1c2099;
 }
 
 .home_blog{
@@ -1015,31 +1044,11 @@ svg path{
   transform: translateY(-.25rem);
 }
 
-
 /*=============== Show Scroll Up ===============*/
 
 .show-scroll{
   bottom: 7.5rem;
 }
-
-
-/* =============== Resume download =============== */
-
-
-#downloadButton {
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-}
-
-#downloadButton:hover {
-  background-color: #0056b3;
-}
-
 
 /* =============== Dark light button =============== */
 

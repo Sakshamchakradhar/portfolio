@@ -119,25 +119,33 @@ contactForm.addEventListener('submit', sendEmail);
 
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
 
-const sections = document.querySelectorAll('section[id]')
-    
-const scrollActive = () =>{
-  	const scrollDown = window.scrollY
+const sections = document.querySelectorAll('section[id]');
 
-	sections.forEach(current =>{
-		const sectionHeight = current.offsetHeight,
-			  sectionTop = current.offsetTop - 58,
-			  sectionId = current.getAttribute('id'),
-			  sectionsClass = document.querySelector('.nav__menu a[href*=' + sectionId + ']');
+const scrollActive = () => {
+    const scrollDown = window.scrollY;
 
-		if(scrollDown > sectionTop && scrollDown <= sectionTop + sectionHeight){
-			sectionsClass.classList.add('active-link');
-		}else{
-			sectionsClass.classList.remove('active-link');
-		}                                                    
-	});
+    sections.forEach(current => {
+        const sectionHeight = current.offsetHeight,
+              sectionTop = current.offsetTop - 58,
+              sectionId = current.getAttribute('id'),
+              sectionsClass = document.querySelector('.nav_menu a[href="#' + sectionId + '"]');
+
+        if (scrollDown > sectionTop && scrollDown <= sectionTop + sectionHeight) {
+            // Add active class to menu item if section is in view
+            sectionsClass.classList.add('active-link');
+        } else {
+            // Remove active class if section is not in view
+            sectionsClass.classList.remove('active-link');
+        }
+    });
 }
-window.addEventListener('scroll', scrollActive)
+
+// Initial call to ensure proper activation when page loads
+scrollActive();
+
+// Listen for scroll events
+window.addEventListener('scroll', scrollActive);
+
 
 
 /*=============== SHOW SCROLL UP ===============*/ 
@@ -154,8 +162,8 @@ window.addEventListener('scroll', scrollUp)
 /*=============== Resume download ===============*/ 
 
 document.getElementById('downloadButton').addEventListener('click', function() {
-  // Replace 'path/to/resume.pdf' with the actual path to your resume PDF file
-  var fileUrl = 'saksham-resume.pdf';
+  // Replace 'saksham-resume.pdf' with the actual path to your resume PDF file
+  var fileUrl = '/assets/img/saksham-resume.pdf';
 
   // Creating a temporary anchor element
   var a = document.createElement('a');
@@ -173,38 +181,30 @@ document.getElementById('downloadButton').addEventListener('click', function() {
 });
 
 
+
 /*=============== DARK LIGHT THEME ===============*/ 
 
-const themeButton = document.getElementById('theme-button')
-const darkTheme = 'dark-theme'
-const iconTheme = 'ri-sun-line'
+function myFunction() {
+  var element = document.body;
+  var themeButton = document.getElementById('theme-button');
+  var iconThemeMoon = 'ri-moon-line';
+  var iconThemeSun = 'ri-sun-line';
 
-// Previously selected topic (if user selected)
-const selectedTheme = localStorage.getItem('selected-theme')
-const selectedIcon = localStorage.getItem('selected-icon')
+  // Toggle dark theme
+  element.classList.toggle("dark-theme");
 
-// We obtain the current theme that the interface has by validating the dark-theme class
-const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dark' : 'light'
-const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'ri-moon-line' : 'ri-sun-line'
-
-// We validate if the user previously chose a topic
-if (selectedTheme) {
-  // If the validation is fulfilled, we ask what the issue was to know if we activated or deactivated the dark
-  document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme)
-  themeButton.classList[selectedIcon === 'ri-moon-line' ? 'add' : 'remove'](iconTheme)
+  // Toggle moon and sun icons based on the current theme
+  if (element.classList.contains("dark-theme")) {
+    themeButton.classList.remove(iconThemeMoon);
+    themeButton.classList.add(iconThemeSun);
+  } else {
+    themeButton.classList.remove(iconThemeSun);
+    themeButton.classList.add(iconThemeMoon);
+  }
 }
 
-// Activate / deactivate the theme manually with the button
-themeButton.addEventListener('click', () => {
-    // Add or remove the dark / icon theme
-    document.body.classList.toggle(darkTheme)
-    themeButton.classList.toggle(iconTheme)
-    // We save the theme and the current icon that the user chose
-    localStorage.setItem('selected-theme', getCurrentTheme())
-    localStorage.setItem('selected-icon', getCurrentIcon())
-})
-
 /*=============== CHANGE BACKGROUND HEADER ===============*/
+
 
 
 /*=============== SCROLL REVEAL ANIMATION ===============*/
