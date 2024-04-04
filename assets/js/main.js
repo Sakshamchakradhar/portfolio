@@ -205,7 +205,28 @@ function myFunction() {
 
 /*=============== CHANGE BACKGROUND HEADER ===============*/
 
-
+const scrollHeader = () =>{
+  const header = document.getElementById('header')
+  // Add a class if the bottom offset is greater than 50 of the viewport
+  this.scrollY >= 50 ? header.classList.add('bg-header')
+                     : header.classList.remove('bg-header')
+}
+window.addEventListener('scroll', scrollHeader);
 
 /*=============== SCROLL REVEAL ANIMATION ===============*/
+
+const sr = ScrollReveal({
+  origin: 'top',
+  distance: '60px',
+  duration: 2500,
+  delay: 400,
+  // reset: true /* Animation repeat */
+});
+
+sr.reveal('.home_data, .projects_container, .footer_container')
+sr.reveal('.home_info div', {Delay: 600, origin: 'bottom', interval:100})
+sr.reveal('.skills_content:nth-child(1), .contact_content:nth-child(1)', {origin: 'left'})
+sr.reveal('.skills_content:nth-child(2), .contact_content:nth-child(2)', {origin: 'right'})
+sr.reveal('.qualification_content, .services_card', {interval: 100})
+
 
