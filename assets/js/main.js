@@ -90,7 +90,7 @@ const sendEmail = (e) => {
         // Remove message after five seconds
         setTimeout(() => {
           contactMessage.textContent = '';
-        }, 3000);
+        }, 5000);
 
         // Reset button text and remove animation class
         btnText.innerHTML = "Submit";
@@ -163,7 +163,7 @@ window.addEventListener('scroll', scrollUp)
 
 document.getElementById('downloadButton').addEventListener('click', function() {
   // Replace 'saksham-resume.pdf' with the actual path to your resume PDF file
-  var fileUrl = '/assets/img/saksham-latest-resume.pdf';
+  var fileUrl = '/assets/img/Saksham-resume.pdf';
 
   // Creating a temporary anchor element
   var a = document.createElement('a');
