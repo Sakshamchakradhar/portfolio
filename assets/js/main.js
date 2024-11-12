@@ -163,7 +163,7 @@ window.addEventListener('scroll', scrollUp)
 
 document.getElementById('downloadButton').addEventListener('click', function() {
   // Replace 'saksham-resume.pdf' with the actual path to your resume PDF file
-  var fileUrl = '/assets/img/Saksham-resume.pdf';
+  var fileUrl = '/assets/img/Saksham-version.pdf';
 
   // Creating a temporary anchor element
   var a = document.createElement('a');
